@@ -5,12 +5,13 @@
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js"
+    "start": "nodemon --inspect server/server.js"
   },
   "author": "Paul Tiller",
   "license": "ISC",
   "dependencies": {
-    "@google/maps": "^0.5.5",
+    "angular": "^1.7.5",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "nodemon": "^1.18.4"
   }
