@@ -1,0 +1,18 @@
+{
+    "type":"Feature",
+    "properties":{
+       "weight":8,
+       "region":"MN",
+       "transactions":1034,
+       "revenue":50344.96,
+       "avg_transaction":48.69
+    },
+    "geometry":{
+       "type":"Point",
+       "coordinates":[
+          44.98,
+          -93.2636
+       ]
+    },
+    "id":"minneapolis"
+ }

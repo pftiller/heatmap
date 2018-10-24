@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 require('dotenv').config();
 const bodyParser = require('body-parser');
-const apiRouter = require('./routes/api.router')
+const apiRouter = require('./routes/api.router');
 
 // Serve static files
 app.use(express.static('server/public'));
