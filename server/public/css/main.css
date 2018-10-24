@@ -1,13 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Roboto');
 #map {
-  height: 85%;
-  width: 85%;
+  width: 85vw;
+  height: 85vw;
   margin: auto;
+  clear:both;
+  border: 3px solid #000;
 }
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #cee7f2;
+}
+header {
+  width: 85%;
+  margin:3.5% auto;
+}
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+.left, .right {
+  width: 15%;
+  max-width: 150px;
 }
 .center {
   text-align: center;
+}
+.main-heading {
+  font-family: 'Open Sans', sans-serif;
+  width:65%;
+  font-size: 1.25rem;
+  margin: 5% auto 2.5%;
+  text-align: center;
+  display: inline-block;
+
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: .75rem;
+  height: 150px;
+  width:85%;
+  margin:1.5% auto 3.5%;
+}
+@media screen and (min-width:500px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width:615px) {
+  .main-heading {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width:715px) {
+  #map {
+    width: 85%;
+    height: 85%;
+  }
+  footer {
+    margin-top:3.5%;
+  }
+}
+@media screen and (min-width:765px) {
+  .main-heading {
+    font-size: 2.25rem;
+  }
 }
