@@ -122,9 +122,9 @@ myApp.controller('MainController', ['MainService', '$window', function(MainServi
       function getCircle(weight) {
           cityCircle = {
               path: google.maps.SymbolPath.CIRCLE,
-              fillColor: getColor(weight),
+              fillColor: 'red',
               fillOpacity: .75,
-              scale: Math.pow(2, weight) / 1.5,
+              scale: weight * 2.5,
               strokeColor: '#000',
               strokeWeight: 1.5,
               clickable: true,
@@ -132,33 +132,7 @@ myApp.controller('MainController', ['MainService', '$window', function(MainServi
 
           return cityCircle
       }
-      function getColor(weight) {
-        if(weight < 1 && weight > 0) {
-          return '#FFCCCC';
-        }
-        else if(weight < 2 && weight > 1) {
-          return '#FF9999';
-        }
-        else if(weight < 3 && weight > 2) {
-          return '#FF6666';
-        }
-        else if(weight < 4 && weight > 3) {
-          return '#FF3333';
-        }
-        else if(weight < 5 && weight > 4) {
-          return '#FF0000';
-        }
-        else if(weight < 6 && weight > 5) {
-          return '#CC0000';
-        }
-        else if(weight > 6) {
-          return '#990000';
-        }
-        else {
-          return '#E8E3E3'
-        }
-
-      }
+    
       map.data.addListener('mouseover', function(event) {
           var feature = event.feature;
           let name = feature.getProperty('name');

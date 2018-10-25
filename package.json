@@ -1,11 +1,10 @@
 {
-  "name": "y",
+  "name": "heatmap",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect server/server.js"
+    "start": "node server/server.js"
   },
   "author": "Paul Tiller",
   "license": "ISC",
@@ -14,6 +13,7 @@
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "fast-json-patch": "^2.0.7",
+    "nodechef-cli": "^2.4.0",
     "nodemon": "^1.18.4"
   }
 }
