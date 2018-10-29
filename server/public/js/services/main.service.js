@@ -3,11 +3,22 @@ myApp.service('MainService', ['$http', function($http){
    const self = this;
    self.map = {};
    self.styles = {};
-   self.data = {};
-    self.getJSON = function() {
-        return $http.get('transactions-by-city.json')
+   self.heatmap;
+   self.circles;
+    self.getHeatmap = function() {
+        return $http.get('heatmap.json')
         .then((res)=> {
-            self.data  = JSON.stringify(res.data);
+            self.heatmap  = res.data;
+            return 'Yep';
+        })
+        .catch((res)=> {
+            console.log('error', res);
+        });
+    }
+    self.getJSON = function() {
+        return $http.get('circles.json')
+        .then((res)=> {
+            self.circles  = JSON.stringify(res.data);
             return 'Okay';
         })
         .catch((res)=> {

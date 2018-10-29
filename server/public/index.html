@@ -8,20 +8,19 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/main.css" type="text/css"/>
     <script type="text/javascript" src="js/vendors/angular.min.js"></script>
+    <script type="text/javascript" src="js/vendors/angular-route.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/controllers/main.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/nav.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/heatmap.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/circles.controller.js"></script>
     <script type="text/javascript" src="js/services/main.service.js"></script>
-    <script type="text/json" src="geo-data.json"></script>
   </head>
-  <body>
-      <header>
-        <img src="assets/mn_united_logo.png" alt="MN United Logo" class="left"/>
-        <h1 class="center main-heading">2018 RTB Transactions</h1>
-        <img src="assets/adtaxi_logo.png" alt="Adtai Logo" class="right"/>
-      </header>
-      <div ng-app="myApp" id="map" ng-controller="MainController as vm"></div>
+  <body ng-app="myApp">
+  
+      <!-- <div ng-app="myApp" id="map" ng-controller="MainController as vm"></div> -->
+      <div ng-view></div>
       <footer>
-         <p class="center">&#42;Based on data from period between 1/1/18 &amp; 10/14/18.</p>
+         <p class="center">&#42;Based on data from period between 4/12/18 &amp; 10/14/18.</p>
       </footer>
   </body>
 </html>

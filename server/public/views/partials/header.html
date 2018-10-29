@@ -1,0 +1,17 @@
+<header ng-controller="NavController as vm">
+    <div id="logos">
+        <img src="../../assets/mn_united_logo.png" alt="MN United Logo" class="left" />
+        <h1 class="center main-heading">2018 RTB Transactions</h1>
+        <img src="../../assets/adtaxi_logo.png" alt="Adtai Logo" class="right" />
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <ul>
+            <li ng-click="vm.activeLocation()">
+                <a ng-class="{active: vm.isActive()=='/heatmap'}" ng-href="/#!/heatmap" >Heatmap</a>
+            </li>
+            <li>
+                <a ng-class="{active: vm.isActive()=='/circles'}" ng-href="/#!/circles">eComm by City</a>
+            </li>
+        </ul>
+    </nav>
+</header>
